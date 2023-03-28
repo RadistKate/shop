@@ -20,7 +20,7 @@ public class Repository {
 
     public void removeById(int removeId) {
         Product foundProduct = findById(removeId);
-        if (foundProduct == null){
+        if (foundProduct == null) {
             throw new NotFoundException(removeId);
         }
         Product[] tmp = new Product[products.length - 1];
@@ -33,16 +33,16 @@ public class Repository {
         }
 
 
-            products = tmp;
-        }
-
-        public Product findById ( int id){
-            for (Product product : products){
-                if (product.getId()==id){
-                    return product;
-                }
-            }
-            return null;
-        }
+        products = tmp;
     }
+
+    public Product findById(int id) {
+        for (Product product : products) {
+            if (product.getId() == id) {
+                return product;
+            }
+        }
+        return null;
+    }
+}
 

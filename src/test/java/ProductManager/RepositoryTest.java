@@ -65,7 +65,6 @@ class RepositoryTest {
                 () -> repo.removeById(6));
 
 
-
     }
 }
 

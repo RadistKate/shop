@@ -49,6 +49,7 @@ class ManagerTest {
         Assertions.assertArrayEquals(expected, actual);
 
     }
+
     @Test
     public void testSearchByName() {
         Repository repo = new Repository();
@@ -67,6 +68,7 @@ class ManagerTest {
         Assertions.assertArrayEquals(expected, actual);
 
     }
+
     @Test
     public void testSearchByNameSecond() {
         Repository repo = new Repository();
@@ -80,11 +82,12 @@ class ManagerTest {
         manager.add(book3);
 
         Product[] actual = manager.searchBy("Shantaram2");
-        Product[] expected = { book2};
+        Product[] expected = {book2};
 
         Assertions.assertArrayEquals(expected, actual);
 
     }
+
     @Test
     public void testSearchByNameThird() {
         Repository repo = new Repository();
@@ -103,7 +106,6 @@ class ManagerTest {
         Assertions.assertArrayEquals(expected, actual);
 
     }
-
 
 
 }
